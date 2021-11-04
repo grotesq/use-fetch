@@ -1,0 +1,16 @@
+# npm
+node_modules
+
+# system
+.DS_Store
+
+# ide
+.idea
+*.iml
+.vscode
+
+# lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
