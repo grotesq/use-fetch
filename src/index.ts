@@ -10,5 +10,5 @@ export function prefetch(url: string) {
 }
 
 export default function useFetch(url: string) {
-  return useSWR(url, fetcher, { refreshInterval: 1000 });
+  return useSWR(url, fetcher);
 }
