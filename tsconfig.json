@@ -1,7 +1,9 @@
 {
+    "include": ["./src/**/*"],
     "compilerOptions": {
-      "outDir": "./",
+      "outDir": "./dist/",
       "noImplicitAny": true,
+      "declaration": true,
       "module": "ES6",
       "target": "ES5",
       "moduleResolution": "node",
