@@ -12,7 +12,7 @@ HTTP 클라이언트인 [axios](https://github.com/axios/axios)와 데이터 캐
 # 의존성 패키지 설치
 npm i axios swr
 # 라이브러리 설치
-npm i grotesq/use-fetch
+npm i @grotesq/use-fetch
 ```
 
 ## 사용법
