@@ -1,12 +1,18 @@
-import axios from 'axios';
-import useSWR, { mutate } from 'swr';
-export function fetcher(url) {
-    return axios.get(url).then(function (response) { return response.data; });
+"use strict";
+exports.__esModule = true;
+exports.prefetch = exports.fetcher = void 0;
+var axios_1 = require("axios");
+var swr_1 = require("swr");
+function fetcher(url) {
+    return axios_1["default"].get(url).then(function (response) { return response.data; });
 }
-export function prefetch(url) {
-    return mutate(url, fetcher(url));
+exports.fetcher = fetcher;
+function prefetch(url) {
+    return (0, swr_1.mutate)(url, fetcher(url));
 }
-export default function useFetch(url) {
-    return useSWR(url, fetcher, { refreshInterval: 1000 });
+exports.prefetch = prefetch;
+function useFetch(url) {
+    return (0, swr_1["default"])(url, fetcher);
 }
+exports["default"] = useFetch;
 //# sourceMappingURL=index.js.map

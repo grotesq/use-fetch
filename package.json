@@ -1,10 +1,11 @@
 {
-  "name": "use-fetch",
+  "name": "@grotesq/use-fetch",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/grotesq/use-fetch",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc src/index.ts",
+    "build": "tsc src/index.ts --declaration --allowJs --sourceMap --outDir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

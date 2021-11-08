@@ -12,7 +12,7 @@ HTTP 클라이언트인 [axios](https://github.com/axios/axios)와 데이터 캐
 # 의존성 패키지 설치
 npm i axios swr
 # 라이브러리 설치
-npm i https://github.com/grotesq/use-fetch
+npm i grotesq/use-fetch
 ```
 
 ## 사용법
@@ -63,6 +63,3 @@ function Component() {
 
 ### 왜 의존성 패키지는 따로 설치해야 하나요?
 본 패키지의 용량을 줄이려고 그랬습니다.
-
-### 왜 npm 배포가 아니고 github 주소로 설치해야 하나요?
-npm에 use-fetch 같은 간단한 이름 등록이 안되는데 다른 이름 짓기는 귀찮아서 그렇습니다.
