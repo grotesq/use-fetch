@@ -1,6 +1,6 @@
 {
   "name": "@grotesq/use-fetch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "homepage": "https://github.com/grotesq/use-fetch",
   "main": "dist/index.js",

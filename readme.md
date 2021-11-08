@@ -22,7 +22,7 @@ npm i @grotesq/use-fetch
 데이터를 불러오고 캐싱합니다.
 
 ```js
-import useFetch from 'use-fetch';
+import useFetch from '@grotesq/use-fetch';
 
 function Component() {
     const { data, error } = useFetch( 'https://jsonplaceholder.typicode.com/todos/1' );
@@ -38,7 +38,7 @@ function Component() {
 캐싱 없이 단일 데이터 호출만 수행합니다.
 
 ```js
-import { fetcher } from 'use-fetch';
+import { fetcher } from '@grotesq/use-fetch';
 
 fetcher( 'https://jsonplaceholder.typicode.com/todos/1' )
   .then( data => console.log( data ) )
@@ -50,7 +50,7 @@ fetcher( 'https://jsonplaceholder.typicode.com/todos/1' )
 prefetch, refresh, revalidate 등을 목적으로 사용됩니다.
 
 ```js
-import { prefetch } from 'use-fetch';
+import { prefetch } from '@grotesq/use-fetch';
 
 function Component() {
     return(
